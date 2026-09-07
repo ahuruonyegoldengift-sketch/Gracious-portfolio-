@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO & Metadata -->
+  <title>Gracious Eberechukwu | Web Developer</title>
+  <meta name="description" content="Portfolio of Gracious Eberechukwu, a web developer creating modern, responsive and user-focused digital experiences." />
+  <meta property="og:title" content="Gracious Eberechukwu | Web Developer" />
+  <meta property="og:description" content="Portfolio of Gracious Eberechukwu, a web developer creating modern, responsive and user-focused digital experiences." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#5B0D19" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Pure CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       1. NAVIGATION BAR
+       ============================================================ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <!-- Left: Logo & Monogram -->
+      <a href="#home" class="nav-logo" aria-label="Gracious Eberechukwu Homepage">
+        <span class="nav-monogram">GE</span>
+        <div class="nav-brand-text">
+          <span class="brand-name">GRACIOUS EBERECHUKWU</span>
+          <span class="brand-role">Web Developer</span>
+        </div>
+      </a>
+
+      <!-- Right: Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions: Theme Switcher & Mobile Toggle -->
+      <div class="nav-actions">
+        <!-- Dark / Light Mode Toggle Button -->
+        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle between dark and light mode">
+          <!-- Sun Icon (shown in dark mode to switch to light) -->
+          <svg class="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in light mode to switch to dark) -->
+          <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button type="button" class="hamburger-btn" id="hamburger-btn" aria-label="Open mobile menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================================================
+         2. HERO SECTION
+         ============================================================ -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-pattern"></div>
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <!-- Left Side: Introduction & Call to Actions -->
+        <div class="hero-content">
+          <span class="hero-label">
+            <span style="color: var(--color-gold);">✦</span> HELLO, I'M
+          </span>
+          <h1 class="hero-heading">
+            GRACIOUS<br />
+            <span class="gold-accent">EBERECHUKWU</span>
+          </h1>
+          <div class="hero-title">
+            WEB DEVELOPER &amp; CREATIVE PROBLEM SOLVER
+          </div>
+          <p class="hero-desc">
+            I build modern, responsive and user-focused websites that combine clean code, thoughtful design and exceptional user experiences.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-gold">
+              VIEW MY WORK
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-hero-talk">
+              LET'S TALK
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials">
+            <span class="hero-social-label">Connect:</span>
+            <div class="social-icons-list">
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter/X Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+              </a>
+              <a href="mailto:madebygracie287@gmail.com" class="social-link" aria-label="Direct Email">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Gracious Eberechukwu's Professional Photograph -->
+        <div class="hero-photo-wrap">
+          <!-- Floating Developer Badges -->
+          <div class="floating-dev-badge badge-code">
+            { code }
+          </div>
+          <div class="floating-dev-badge badge-html-css-js">
+            <span style="color: var(--color-gold);">&lt;/&gt;</span> HTML • CSS • JS
+          </div>
+          <div class="badge-developer-role">
+            <span class="status-indicator"></span>
+            WEB DEVELOPER
+          </div>
+
+          <!-- Deep Burgundy & Muted Gold Frame -->
+          <div class="photo-frame-outer">
+            <div class="photo-frame-inner">
+              <img 
+                src="images/profile.jpg" 
+                alt="Gracious Eberechukwu — Professional Web Developer" 
+                class="profile-photo"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. ABOUT SECTION
+         ============================================================ -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left: About Photograph & Experience Stamp -->
+          <div class="about-photo-wrapper">
+            <div class="about-photo-card">
+              <img 
+                src="images/about.jpg" 
+                alt="Gracious Eberechukwu" 
+                referrerpolicy="no-referrer"
+                onerror="this.onerror=null; this.src='images/profile.jpg';"
+              />
+              <div class="about-experience-stamp">
+                <div class="stamp-num">2+</div>
+                <div class="stamp-text">Years Web Dev</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Biography & Metadata -->
+          <div class="about-content">
+            <span class="section-tag">About Me</span>
+            <div class="about-greeting">Hi, I'm Gracious.</div>
+            <h2 class="about-heading">Transforming Ideas Into Seamless Digital Realities</h2>
+            <p class="about-bio">
+              I'm a passionate web developer who enjoys transforming ideas into beautiful, functional and user-friendly digital experiences. I specialize in building responsive websites and interactive web applications while continuously learning and improving my technical skills.
+            </p>
+
+            <!-- Editable Information Grid -->
+            <div class="about-meta-grid">
+              <div class="meta-item">
+                <span class="meta-label">Full Name:</span>
+                <span class="meta-value">Gracious Eberechukwu</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Location:</span>
+                <span class="meta-value">Nigeria</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Role:</span>
+                <span class="meta-value">Web Developer</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Specialization:</span>
+                <span class="meta-value">Frontend Development</span>
+              </div>
+              <div class="meta-item" style="grid-column: 1 / -1;">
+                <span class="meta-label">Availability:</span>
+                <span class="meta-value available">Available for Opportunities</span>
+              </div>
+            </div>
+
+            <!-- Download CV Button -->
+            <div class="about-actions">
+              <a href="assets/cv.pdf" download="Gracious_Eberechukwu_CV.pdf" class="btn btn-primary" id="cv-download-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                DOWNLOAD CV
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                Get In Touch
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. SKILLS SECTION
+         ============================================================ -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">MY SKILLS</h2>
+          <p class="section-desc">
+            Organized across core frontend capabilities, backend fundamentals, professional tooling, and UX best practices.
+          </p>
+        </div>
+
+        <div class="skills-category-grid">
+          <!-- FRONTEND -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="category-title">FRONTEND</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <span class="skill-bullet">◆</span>
+                <div class="skill-info">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-desc">Semantic, accessible document structuring</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-bullet">◆</span>
+                <div class="skill-info">
+                  <span class="skill-name">CSS3</span>
+                  <span class="skill-desc">Modern layouts, Flexbox, Grid, custom styling</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-bullet">◆</span>
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-desc">DOM manipulation, ES6+ syntax, asynchronous logic</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-bullet">◆</span>
+                <div class="skill-info">
+                  <span class="skill-name">React</span>
+                  <span class="skill-desc">Component-driven architecture and state management</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-bullet">◆</span>
+                <div class="skill-info">
+                  <span class="skill-name">Responsive Design</span>
+                  <span class="skill-desc">Cross-device consistency from mobile to desktop</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BACKEND -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">BACKEND</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <span class="skill-bullet">◆</span>
+                <div class="skill-info">
+                  <span class="skill-name">Node.js</span>
+                  <span class="skill-desc">Server-side runtime and environment management</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-bullet">◆</span>
+                <div class="skill-info">
+                  <span class="skill-name">Express</span>
+                  <span class="skill-desc">Server routing, middleware, and request handling</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-bullet">◆</span>
+                <div class="skill-info">
+                  <span class="skill-name">REST APIs</span>
+                  <span class="skill-desc">Data consumption, JSON endpoints, client-server sync</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TOOLS -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">TOOLS</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <span class="skill-bullet">◆</span>
+                <div class="skill-info">
+                  <span class="skill-name">Git</span>
+                  <span class="skill-desc">Version control, branching, and commit history</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-bullet">◆</span>
+                <div class="skill-info">
+                  <span class="skill-name">GitHub</span>
+                  <span class="skill-desc">Repository collaboration, pull requests, hosting</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-bullet">◆</span>
+                <div class="skill-info">
+                  <span class="skill-name">VS Code</span>
+                  <span class="skill-desc">Customized development workflow and debugging</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-bullet">◆</span>
+                <div class="skill-info">
+                  <span class="skill-name">Figma</span>
+                  <span class="skill-desc">UI wireframes, design inspection, asset export</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- OTHER -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">OTHER</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <span class="skill-bullet">◆</span>
+                <div class="skill-info">
+                  <span class="skill-name">UI/UX</span>
+                  <span class="skill-desc">User journeys, visual balance, ergonomic hierarchy</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-bullet">◆</span>
+                <div class="skill-info">
+                  <span class="skill-name">API Integration</span>
+                  <span class="skill-desc">Fetching dynamic data and handling async states</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-bullet">◆</span>
+                <div class="skill-info">
+                  <span class="skill-name">Web Performance</span>
+                  <span class="skill-desc">Image optimization, asset efficiency, fast rendering</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-bullet">◆</span>
+                <div class="skill-info">
+                  <span class="skill-name">SEO Basics</span>
+                  <span class="skill-desc">Clean metadata, structured headings, search indexing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. FEATURED WORK (REAL PROJECTS & STITCH DESIGNS)
+         ============================================================ -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Evidence of Projects</span>
+          <h2 class="section-title">EVIDENCE OF WORK &amp; LIVE PROJECTS</h2>
+          <p class="section-desc">
+            Interactive browser showcases of verified production deployments, responsive web applications, and Google Stitch UI/UX design systems.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="project-filters" role="tablist" aria-label="Project Categories">
+          <button type="button" class="filter-btn active" data-filter="all">ALL</button>
+          <button type="button" class="filter-btn" data-filter="web-development">WEB DEVELOPMENT</button>
+          <button type="button" class="filter-btn" data-filter="ui-ux-design">UI/UX DESIGN</button>
+          <button type="button" class="filter-btn" data-filter="web-design">WEB DESIGN</button>
+          <button type="button" class="filter-btn" data-filter="design-concepts">DESIGN CONCEPTS</button>
+        </div>
+
+        <!-- Projects Grid (Injected and filtered via Vanilla JS) -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Populated by js/script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. MY JOURNEY (EXPERIENCE TIMELINE)
+         ============================================================ -->
+    <section class="section journey-section" id="experience">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Career Milestones</span>
+          <h2 class="section-title">MY JOURNEY</h2>
+          <p class="section-desc">
+            A chronological timeline tracking the continuous growth, projects, and technical skills mastered along the way.
+          </p>
+        </div>
+
+        <div class="timeline-wrap">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-content-card">
+              <div class="timeline-period">2026 — PRESENT</div>
+              <h3 class="timeline-role">Web Development</h3>
+              <p class="timeline-desc">
+                Working on modern websites and web applications, refining full-responsive frontend architectures and delivering real client solutions.
+              </p>
+              <div class="timeline-placeholder-note">[Editable Placeholder Timeline]</div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-content-card">
+              <div class="timeline-period">2025 — 2026</div>
+              <h3 class="timeline-role">Development Projects</h3>
+              <p class="timeline-desc">
+                Built responsive websites, UI prototypes on Google Stitch, and interactive digital experiences with clean HTML, CSS, and modern JavaScript.
+              </p>
+              <div class="timeline-placeholder-note">[Editable Placeholder Timeline]</div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-content-card">
+              <div class="timeline-period">2024 — 2025</div>
+              <h3 class="timeline-role">Started Web Development</h3>
+              <p class="timeline-desc">
+                Learned web development fundamentals, core algorithms, design ergonomics, and version control workflows.
+              </p>
+              <div class="timeline-placeholder-note">[Editable Placeholder Timeline]</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. SERVICES ("WHAT I DO")
+         ============================================================ -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Core Offerings</span>
+          <h2 class="section-title">WHAT I DO</h2>
+          <p class="section-desc">
+            Tailored digital solutions combining clean craftsmanship, high performance, and thoughtful user-centered design.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">WEB DEVELOPMENT</h3>
+            <p class="service-desc">
+              Building modern, responsive websites crafted with clean standards and optimized for seamless cross-browser reliability.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-title">FRONTEND DEVELOPMENT</h3>
+            <p class="service-desc">
+              Creating interactive interfaces using clean and maintainable code that prioritizes responsiveness, speed, and intuitive flows.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">WEBSITE REDESIGN</h3>
+            <p class="service-desc">
+              Transforming outdated websites into modern digital experiences that engage visitors and elevate brand credibility.
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">RESPONSIVE DESIGN</h3>
+            <p class="service-desc">
+              Creating websites that work beautifully across phones, tablets and desktops with fluid layouts and tactile ergonomics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         8. WHY WORK WITH ME
+         ============================================================ -->
+    <section class="section why-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Value Proposition</span>
+          <h2 class="section-title">WHY WORK WITH ME?</h2>
+          <p class="section-desc">
+            Professional qualities and technical standards that guide every project from concept to deployment.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-number">01 / DISCIPLINE</div>
+            <h3 class="why-title">CLEAN CODE</h3>
+            <p class="why-desc">
+              Readable, maintainable and structured code built on robust web standards with zero unnecessary bloat.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-number">02 / ADAPTABILITY</div>
+            <h3 class="why-title">RESPONSIVE DESIGN</h3>
+            <p class="why-desc">
+              Websites that look polished and work effortlessly across all modern devices, resolutions, and screen sizes.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-number">03 / EMPATHY</div>
+            <h3 class="why-title">USER-FOCUSED</h3>
+            <p class="why-desc">
+              Simple and intuitive digital experiences engineered around real user needs, clarity, and ease of navigation.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-number">04 / GROWTH</div>
+            <h3 class="why-title">CONTINUOUS LEARNING</h3>
+            <p class="why-desc">
+              Continuously improving technical skills, adopting modern best practices, and staying ahead of industry evolutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         9. STATISTICS SECTION
+         ============================================================ -->
+    <section class="stats-section" id="statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" data-target="10" data-suffix="+">0+</div>
+            <div class="stat-label">PROJECTS COMPLETED</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="2" data-suffix="+">0+</div>
+            <div class="stat-label">YEARS EXPERIENCE</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="5" data-suffix="+">0+</div>
+            <div class="stat-label">CORE TECHNOLOGIES</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="100" data-suffix="%">0%</div>
+            <div class="stat-label">COMMITMENT TO QUALITY</div>
+          </div>
+        </div>
+        <div class="stats-note">
+          * Note: Values represent current portfolio milestones and are continuously updated.
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         10. TESTIMONIALS ("WHAT PEOPLE SAY")
+         ============================================================ -->
+    <section class="section testimonials-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Client Feedback</span>
+          <h2 class="section-title">WHAT PEOPLE SAY</h2>
+          <p class="section-desc">
+            Early reviews and peer feedback reflecting collaboration, work ethic, and frontend technical execution.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <span class="testimonial-badge">PLACEHOLDER</span>
+            <div class="testimonial-quote-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path>
+              </svg>
+            </div>
+            <p class="testimonial-text">
+              "Gracious approaches frontend challenges with remarkable diligence and precision. Her ability to translate UI wireframes into clean, responsive code is outstanding."
+            </p>
+            <div class="testimonial-author-wrap">
+              <div class="author-avatar">SC</div>
+              <div class="author-meta">
+                <span class="author-name">Sarah Collins</span>
+                <span class="author-role">Project Collaborator</span>
+                <span class="author-rating">★★★★★</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <span class="testimonial-badge">PLACEHOLDER</span>
+            <div class="testimonial-quote-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path>
+              </svg>
+            </div>
+            <p class="testimonial-text">
+              "Her attention to design details and responsiveness made our project look truly professional. Gracious communicates clearly and delivers clean work on time."
+            </p>
+            <div class="testimonial-author-wrap">
+              <div class="author-avatar">MA</div>
+              <div class="author-meta">
+                <span class="author-name">Michael Adeyemi</span>
+                <span class="author-role">Tech Lead / Mentor</span>
+                <span class="author-rating">★★★★★</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <span class="testimonial-badge">PLACEHOLDER</span>
+            <div class="testimonial-quote-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path>
+              </svg>
+            </div>
+            <p class="testimonial-text">
+              "Working with Gracious was a breeze. She has a natural eye for user ergonomics and ensures the website looks exceptional on both mobile phones and laptops."
+            </p>
+            <div class="testimonial-author-wrap">
+              <div class="author-avatar">EO</div>
+              <div class="author-meta">
+                <span class="author-name">Elena Okafor</span>
+                <span class="author-role">Creative Director</span>
+                <span class="author-rating">★★★★★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         11. CONTACT SECTION
+         ============================================================ -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Start a Conversation</span>
+          <h2 class="section-title">LET'S BUILD SOMETHING GREAT TOGETHER.</h2>
+          <p class="section-desc">
+            Have a project, opportunity or idea? Let's talk.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details & Socials -->
+          <div class="contact-info">
+            <div class="contact-card-list">
+              <!-- Email -->
+              <div class="contact-info-card">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-card-body">
+                  <span class="contact-card-label">Direct Email</span>
+                  <a href="mailto:madebygracie287@gmail.com" class="contact-card-val">madebygracie287@gmail.com</a>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-info-card">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-card-body">
+                  <span class="contact-card-label">Location</span>
+                  <span class="contact-card-val">Nigeria (Available Worldwide)</span>
+                </div>
+              </div>
+
+              <!-- Availability -->
+              <div class="contact-info-card">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-card-body">
+                  <span class="contact-card-label">Availability</span>
+                  <span class="contact-card-val" style="color: var(--status-dot);">Available for Opportunities</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="contact-socials-wrap">
+              <div class="contact-socials-label">Connect Online</div>
+              <div class="social-icons-list">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter/X">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                  </svg>
+                </a>
+                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-card">
+            <div id="form-status" class="form-status"></div>
+
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="form-name" class="form-label">Your Name *</label>
+                <input 
+                  type="text" 
+                  id="form-name" 
+                  name="name" 
+                  class="form-input" 
+                  placeholder="e.g. Alex Morgan" 
+                  required 
+                />
+                <span class="form-error-msg">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email Address *</label>
+                <input 
+                  type="email" 
+                  id="form-email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="name@example.com" 
+                  required 
+                />
+                <span class="form-error-msg">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject *</label>
+                <input 
+                  type="text" 
+                  id="form-subject" 
+                  name="subject" 
+                  class="form-input" 
+                  placeholder="Project Opportunity / Inquiry" 
+                  required 
+                />
+                <span class="form-error-msg">Please enter a subject.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message *</label>
+                <textarea 
+                  id="form-message" 
+                  name="message" 
+                  class="form-textarea" 
+                  placeholder="Tell me about your project, timeline, or objectives..." 
+                  required
+                ></textarea>
+                <span class="form-error-msg">Please provide a message with at least 10 characters.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                SEND MESSAGE
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <p class="contact-notice">
+                * Note: Frontend form with client-side validation. Backend mail services can be attached as needed.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       12. FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Summary -->
+        <div class="footer-brand">
+          <div class="brand-name">GRACIOUS EBERECHUKWU</div>
+          <p class="footer-tagline">
+            "Building digital experiences with code and creativity."
+          </p>
+          <div class="social-icons-list">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+            <a href="mailto:madebygracie287@gmail.com" class="social-link" aria-label="Email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Me</a></li>
+            <li><a href="#skills" class="footer-link">My Skills</a></li>
+            <li><a href="#projects" class="footer-link">Featured Work</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Explore More</div>
+          <ul class="footer-links-list">
+            <li><a href="#experience" class="footer-link">My Journey</a></li>
+            <li><a href="#services" class="footer-link">Services</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+            <li><a href="assets/cv.pdf" download="Gracious_Eberechukwu_CV.pdf" class="footer-link">Download CV (PDF)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <p>© 2026 Gracious Eberechukwu. All rights reserved.</p>
+        <p>Built with HTML5, CSS3 &amp; Vanilla JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Vanilla JavaScript -->
+  <script src="js/script.js" defer></script>
+</body>
+</html>
