@@ -111,9 +111,9 @@ const projects = [
 ];
 
 // ============================================================
-// INITIALIZATION & DOM CONTENT LOADED
+// INITIALIZATION & ROBUST LIFECYCLE
 // ============================================================
-document.addEventListener("DOMContentLoaded", () => {
+function initializeApp() {
     initTheme();
     initNavigation();
     renderProjects("all");
@@ -122,24 +122,42 @@ document.addEventListener("DOMContentLoaded", () => {
     initStatsCounter();
     initScrollToTop();
     initSmoothScroll();
-});
+}
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initializeApp);
+} else {
+    initializeApp();
+}
 
 // ============================================================
 // THEME SWITCHER (Dark / Light Mode with localStorage)
 // Default is Dark Mode
 // ============================================================
+window.toggleTheme = function () {
+    const currentTheme = document.documentElement.getAttribute("data-theme") || "dark";
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", newTheme);
+    try {
+        localStorage.setItem("ge-portfolio-theme", newTheme);
+    } catch (e) {
+        console.warn("Could not save theme to localStorage", e);
+    }
+};
+
 function initTheme() {
-    const savedTheme = localStorage.getItem("ge-portfolio-theme") || "dark";
+    let savedTheme = "dark";
+    try {
+        savedTheme = localStorage.getItem("ge-portfolio-theme") || "dark";
+    } catch (e) {}
     document.documentElement.setAttribute("data-theme", savedTheme);
 
     const themeToggleBtn = document.getElementById("theme-toggle");
     if (themeToggleBtn) {
-        themeToggleBtn.addEventListener("click", () => {
-            const currentTheme = document.documentElement.getAttribute("data-theme") || "dark";
-            const newTheme = currentTheme === "dark" ? "light" : "dark";
-            document.documentElement.setAttribute("data-theme", newTheme);
-            localStorage.setItem("ge-portfolio-theme", newTheme);
-        });
+        themeToggleBtn.onclick = function (e) {
+            e.preventDefault();
+            window.toggleTheme();
+        };
     }
 }
 
@@ -460,6 +478,8 @@ function initContactForm() {
             submitBtn.disabled = false;
             submitBtn.innerHTML = originalText;
             
+            const senderName = nameInput ? nameInput.value.trim() : "Friend";
+
             // Clear inputs
             form.reset();
 
@@ -468,7 +488,7 @@ function initContactForm() {
                 statusBox.className = "form-status success";
                 statusBox.innerHTML = `
                     <strong>Message Validated!</strong><br/>
-                    Thank you for reaching out, ${escapeHtml(nameInput.value || 'Friend')}. 
+                    Thank you for reaching out, ${escapeHtml(senderName || 'Friend')}. 
                     <em>Note for portfolio review:</em> This is the frontend MVP validation interface. An active email relay service (such as Formspree or custom API) can be hooked up directly here. You can also reach Gracious directly at <strong>${escapeHtml(developer.email)}</strong>.
                 `;
                 statusBox.style.display = "block";

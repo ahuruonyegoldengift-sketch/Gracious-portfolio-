@@ -20,6 +20,24 @@
 
   <!-- Pure CSS Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Immediate Theme Engine (zero-latency execution on load) -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("ge-portfolio-theme") || "dark";
+        document.documentElement.setAttribute("data-theme", saved);
+      } catch (e) {}
+    })();
+    window.toggleTheme = function () {
+      try {
+        var current = document.documentElement.getAttribute("data-theme") || "dark";
+        var next = current === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", next);
+        localStorage.setItem("ge-portfolio-theme", next);
+      } catch (e) {}
+    };
+  </script>
 </head>
 <body>
 
@@ -53,7 +71,7 @@
       <!-- Nav Actions: Theme Switcher & Mobile Toggle -->
       <div class="nav-actions">
         <!-- Dark / Light Mode Toggle Button -->
-        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle between dark and light mode">
+        <button type="button" class="theme-toggle-btn" id="theme-toggle" onclick="window.toggleTheme()" aria-label="Toggle between dark and light mode">
           <!-- Sun Icon (shown in dark mode to switch to light) -->
           <svg class="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="5"></circle>
@@ -472,9 +490,372 @@
           <button type="button" class="filter-btn" data-filter="design-concepts">DESIGN CONCEPTS</button>
         </div>
 
-        <!-- Projects Grid (Injected and filtered via Vanilla JS) -->
+        <!-- Projects Grid (Pre-rendered for zero-delay static hosting, dynamic filtering via JS) -->
         <div class="projects-grid" id="projects-grid">
-          <!-- Populated by js/script.js -->
+          <!-- Project 1: Obsidian Athletics -->
+          <article class="project-card" data-category="web-development">
+            <div class="project-preview">
+              <div class="browser-chrome">
+                <div class="browser-dots">
+                  <span class="browser-dot dot-close"></span>
+                  <span class="browser-dot dot-minimize"></span>
+                  <span class="browser-dot dot-maximize"></span>
+                </div>
+                <div class="browser-address-bar">
+                  <svg class="browser-lock-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                  <span class="browser-url-text">happy-page-builder-762.lovable.app</span>
+                </div>
+                <div class="browser-actions">
+                  <a href="https://happy-page-builder-762.lovable.app/" target="_blank" rel="noopener noreferrer" class="browser-external-link" title="Open in new tab" aria-label="Open Obsidian Athletics in new tab">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="browser-viewport">
+                <span class="viewport-status-tag badge-live">
+                  <span class="status-pulse-dot"></span>
+                  ACTIVE DEPLOYMENT
+                </span>
+                <img src="images/project1.jpg" alt="Obsidian Athletics UI Screenshot" class="project-img" loading="lazy" onerror="this.onerror=null; this.src='images/project1.jpg';" />
+                <div class="viewport-hover-overlay">
+                  <a href="https://happy-page-builder-762.lovable.app/" target="_blank" rel="noopener noreferrer" class="btn-preview-launch">
+                    VIEW LIVE WEBSITE
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-subtitle">Fitness &amp; Athletic Performance Web Platform</span>
+              <h3 class="project-title">Obsidian Athletics</h3>
+              <p class="project-desc">A high-impact athletic training and gym website engineered for modern fitness enthusiasts. Features class schedules, membership pricing tiers, dynamic trainer showcases, and a responsive booking interface.</p>
+              <div class="project-features-list">
+                <div class="feature-pill"><span class="feature-pill-icon">✓</span><span>Live Production Site</span></div>
+                <div class="feature-pill"><span class="feature-pill-icon">✓</span><span>Class Booking UI</span></div>
+                <div class="feature-pill"><span class="feature-pill-icon">✓</span><span>Responsive Design</span></div>
+                <div class="feature-pill"><span class="feature-pill-icon">✓</span><span>Fast Load Speed</span></div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Responsive Layout</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://happy-page-builder-762.lovable.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="VIEW LIVE WEBSITE for Obsidian Athletics">
+                  VIEW LIVE WEBSITE
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Stitch Design Project -->
+          <article class="project-card" data-category="ui-ux-design">
+            <div class="project-preview">
+              <div class="browser-chrome">
+                <div class="browser-dots">
+                  <span class="browser-dot dot-close"></span>
+                  <span class="browser-dot dot-minimize"></span>
+                  <span class="browser-dot dot-maximize"></span>
+                </div>
+                <div class="browser-address-bar">
+                  <svg class="browser-lock-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                  <span class="browser-url-text">stitch.withgoogle.com/projects/12377891430504498673</span>
+                </div>
+                <div class="browser-actions">
+                  <a href="https://stitch.withgoogle.com/projects/12377891430504498673" target="_blank" rel="noopener noreferrer" class="browser-external-link" title="Open in new tab" aria-label="Open Stitch Design Project in new tab">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="browser-viewport">
+                <span class="viewport-status-tag badge-design">
+                  <span class="status-pulse-dot"></span>
+                  DESIGN PROTOTYPE
+                </span>
+                <img src="images/project2.jpg" alt="Stitch Design Project UI Screenshot" class="project-img" loading="lazy" onerror="this.onerror=null; this.src='images/project1.jpg';" />
+                <div class="viewport-hover-overlay">
+                  <a href="https://stitch.withgoogle.com/projects/12377891430504498673" target="_blank" rel="noopener noreferrer" class="btn-preview-launch">
+                    VIEW DESIGN
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-subtitle">Google Stitch UI/UX Design System &amp; Web App</span>
+              <h3 class="project-title">Stitch Design Project</h3>
+              <p class="project-desc">Comprehensive web interface design prototype crafted on Google Stitch. Establishes design tokens, cohesive typographic scale, interactive dashboard components, and fluid responsive wireframes.</p>
+              <div class="project-features-list">
+                <div class="feature-pill"><span class="feature-pill-icon">✓</span><span>Google Stitch Prototype</span></div>
+                <div class="feature-pill"><span class="feature-pill-icon">✓</span><span>Design System Tokens</span></div>
+                <div class="feature-pill"><span class="feature-pill-icon">✓</span><span>Dashboard Hierarchy</span></div>
+                <div class="feature-pill"><span class="feature-pill-icon">✓</span><span>Wireframe Flows</span></div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">UI/UX Design</span>
+                <span class="tech-tag">Wireframing</span>
+                <span class="tech-tag">Design Systems</span>
+                <span class="tech-tag">Figma/Stitch</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://stitch.withgoogle.com/projects/12377891430504498673" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="VIEW DESIGN for Stitch Design Project">
+                  VIEW DESIGN
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: CLAT Restaurant & Lounge -->
+          <article class="project-card" data-category="web-development">
+            <div class="project-preview">
+              <div class="browser-chrome">
+                <div class="browser-dots">
+                  <span class="browser-dot dot-close"></span>
+                  <span class="browser-dot dot-minimize"></span>
+                  <span class="browser-dot dot-maximize"></span>
+                </div>
+                <div class="browser-address-bar">
+                  <svg class="browser-lock-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                  <span class="browser-url-text">lucent-sprite-49b9f8.netlify.app</span>
+                </div>
+                <div class="browser-actions">
+                  <a href="https://lucent-sprite-49b9f8.netlify.app" target="_blank" rel="noopener noreferrer" class="browser-external-link" title="Open in new tab" aria-label="Open CLAT Restaurant & Lounge in new tab">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="browser-viewport">
+                <span class="viewport-status-tag badge-live">
+                  <span class="status-pulse-dot"></span>
+                  ACTIVE DEPLOYMENT
+                </span>
+                <img src="images/project3.jpg" alt="CLAT Restaurant &amp; Lounge UI Screenshot" class="project-img" loading="lazy" onerror="this.onerror=null; this.src='images/project1.jpg';" />
+                <div class="viewport-hover-overlay">
+                  <a href="https://lucent-sprite-49b9f8.netlify.app" target="_blank" rel="noopener noreferrer" class="btn-preview-launch">
+                    VIEW LIVE WEBSITE
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-subtitle">Luxury Culinary &amp; Hospitality Web Experience</span>
+              <h3 class="project-title">CLAT Restaurant &amp; Lounge</h3>
+              <p class="project-desc">Elegant restaurant and cocktail lounge website capturing ambient dining aesthetics. Highlights seasonal tasting menus, chef's selections, online reservation requests, and seamless mobile responsiveness.</p>
+              <div class="project-features-list">
+                <div class="feature-pill"><span class="feature-pill-icon">✓</span><span>Live Web Application</span></div>
+                <div class="feature-pill"><span class="feature-pill-icon">✓</span><span>Table Reservation UI</span></div>
+                <div class="feature-pill"><span class="feature-pill-icon">✓</span><span>Artisanal Menu Layout</span></div>
+                <div class="feature-pill"><span class="feature-pill-icon">✓</span><span>Mobile Diners</span></div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Interactive UI</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://lucent-sprite-49b9f8.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="VIEW LIVE WEBSITE for CLAT Restaurant & Lounge">
+                  VIEW LIVE WEBSITE
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Gracious Apex -->
+          <article class="project-card" data-category="web-development">
+            <div class="project-preview">
+              <div class="browser-chrome">
+                <div class="browser-dots">
+                  <span class="browser-dot dot-close"></span>
+                  <span class="browser-dot dot-minimize"></span>
+                  <span class="browser-dot dot-maximize"></span>
+                </div>
+                <div class="browser-address-bar">
+                  <svg class="browser-lock-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                  <span class="browser-url-text">gracious-apex.ai.studio</span>
+                </div>
+                <div class="browser-actions">
+                  <a href="https://gracious-apex.ai.studio" target="_blank" rel="noopener noreferrer" class="browser-external-link" title="Open in new tab" aria-label="Open Gracious Apex in new tab">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="browser-viewport">
+                <span class="viewport-status-tag badge-live">
+                  <span class="status-pulse-dot"></span>
+                  ACTIVE DEPLOYMENT
+                </span>
+                <img src="images/project4.jpg" alt="Gracious Apex UI Screenshot" class="project-img" loading="lazy" onerror="this.onerror=null; this.src='images/project1.jpg';" />
+                <div class="viewport-hover-overlay">
+                  <a href="https://gracious-apex.ai.studio" target="_blank" rel="noopener noreferrer" class="btn-preview-launch">
+                    VIEW PROJECT
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-subtitle">Web Development Studio &amp; Technical Portfolio</span>
+              <h3 class="project-title">Gracious Apex</h3>
+              <p class="project-desc">Modern web development showcase engineered by Gracious, emphasizing clean modular code, performance metrics, bespoke responsive layouts, and modern frontend styling.</p>
+              <div class="project-features-list">
+                <div class="feature-pill"><span class="feature-pill-icon">✓</span><span>Live Deployment</span></div>
+                <div class="feature-pill"><span class="feature-pill-icon">✓</span><span>Semantic HTML5</span></div>
+                <div class="feature-pill"><span class="feature-pill-icon">✓</span><span>Modern CSS Architecture</span></div>
+                <div class="feature-pill"><span class="feature-pill-icon">✓</span><span>98+ Performance</span></div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Web Development</span>
+                <span class="tech-tag">Responsive Layout</span>
+                <span class="tech-tag">Modern CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://gracious-apex.ai.studio" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="VIEW PROJECT for Gracious Apex">
+                  VIEW PROJECT
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Stitch Design Project 2 -->
+          <article class="project-card" data-category="ui-ux-design">
+            <div class="project-preview">
+              <div class="browser-chrome">
+                <div class="browser-dots">
+                  <span class="browser-dot dot-close"></span>
+                  <span class="browser-dot dot-minimize"></span>
+                  <span class="browser-dot dot-maximize"></span>
+                </div>
+                <div class="browser-address-bar">
+                  <svg class="browser-lock-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                  <span class="browser-url-text">stitch.withgoogle.com/projects/16420433953498625092</span>
+                </div>
+                <div class="browser-actions">
+                  <a href="https://stitch.withgoogle.com/projects/16420433953498625092" target="_blank" rel="noopener noreferrer" class="browser-external-link" title="Open in new tab" aria-label="Open Stitch Design Project 2 in new tab">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="browser-viewport">
+                <span class="viewport-status-tag badge-design">
+                  <span class="status-pulse-dot"></span>
+                  DESIGN PROTOTYPE
+                </span>
+                <img src="images/project5.jpg" alt="Stitch Design Project 2 UI Screenshot" class="project-img" loading="lazy" onerror="this.onerror=null; this.src='images/project1.jpg';" />
+                <div class="viewport-hover-overlay">
+                  <a href="https://stitch.withgoogle.com/projects/16420433953498625092" target="_blank" rel="noopener noreferrer" class="btn-preview-launch">
+                    VIEW DESIGN
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-subtitle">Digital Workflow &amp; Productivity UI Concept</span>
+              <h3 class="project-title">Stitch Design Project 2</h3>
+              <p class="project-desc">Interactive UI/UX design exploration on Google Stitch modeling modern productivity tools. Features clean task boards, data cards, intuitive search and navigation, and ergonomic visual hierarchy.</p>
+              <div class="project-features-list">
+                <div class="feature-pill"><span class="feature-pill-icon">✓</span><span>Interactive Prototype</span></div>
+                <div class="feature-pill"><span class="feature-pill-icon">✓</span><span>Workflow UX</span></div>
+                <div class="feature-pill"><span class="feature-pill-icon">✓</span><span>Component States</span></div>
+                <div class="feature-pill"><span class="feature-pill-icon">✓</span><span>Visual Hierarchy</span></div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">UI/UX Design</span>
+                <span class="tech-tag">Component Design</span>
+                <span class="tech-tag">Prototypes</span>
+                <span class="tech-tag">User Experience</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://stitch.withgoogle.com/projects/16420433953498625092" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="VIEW DESIGN for Stitch Design Project 2">
+                  VIEW DESIGN
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -1009,6 +1390,7 @@
   </button>
 
   <!-- Vanilla JavaScript -->
-  <script src="js/script.js" defer></script>
+  <script type="module" src="./js/script.js"></script>
+  <script nomodule src="./js/script.js"></script>
 </body>
 </html>
